@@ -43,14 +43,28 @@ header, div img {
 header { 
     overflow: hidden;
     margin: 70px auto;
+    border-radius: 50%;
+}
+header:after {
+	content: "❚❚";
+	font-size: 150px;
+	position: absolute;
+	z-index: 12;
+	color: rgba(255,255,255, 0);
+	left: 47%; top: 15vw;
+	transition: 1s all ease-in-out;
+}
+header:hover:after {
+	color: rgba(255,255,255, 0.6);
 }
 .hero{
     width: 3000px;
-    animation-name:slider;
-	animation-duration:10s;
+    /* animation-name:slider; */
+	animation-duration:11s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count:infinite;
 }
+.hero:hover { animation-play-state:paused; }
 @keyframes slider {
 	0% { transform: translateX(0px); }
 	20% { transform: translateX(0px); }
@@ -72,7 +86,7 @@ header {
     cursor: pointer;
   }
 .moreinfo{
-    margin-top: 50px;
+    margin-top: 80px;
     text-align: center;
 }
 button{
