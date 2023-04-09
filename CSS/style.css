@@ -36,15 +36,11 @@ li:hover{
     color: aliceblue;
     cursor: pointer;
 }
-
 header, div img {
 	width: 500px; 
     height: 500px;
 }
 header { 
-    /* margin-top: 50px; */
-	/* border: 1px solid black; */
-	/* background: #000; */
     overflow: hidden;
     margin: 70px auto;
 }
@@ -66,10 +62,7 @@ header {
 	95% { transform: translateX(-1500px); }
 	100% { transform: translateX(2000px);  }
 }
-
 .hero img{
-    /* margin: 0 auto; */
-    /* margin-top: 50px; */
     width: 497px;
     border-radius: 50%;
     transition: transform 1.5s ease-in-out;
@@ -78,12 +71,10 @@ header {
     transform: rotate(720deg);
     cursor: pointer;
   }
-
 .moreinfo{
     margin-top: 50px;
     text-align: center;
 }
-
 button{
     background: #990118;
     color: aliceblue;
@@ -92,7 +83,6 @@ button{
     border-radius: 6px;
     border: none;
 }
-
 button:hover{
     background-color: aliceblue;
     color: black;
