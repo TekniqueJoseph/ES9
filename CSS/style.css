@@ -19,6 +19,7 @@ h1:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 ul{
     display: flex;
@@ -35,24 +36,48 @@ li:hover{
     color: aliceblue;
     cursor: pointer;
 }
-.hero{
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-img{
-    margin-top: 50px;
-    width: 500px;
+
+header, div img {
+	width: 500px; 
     height: 500px;
+}
+header { 
+    /* margin-top: 50px; */
+	/* border: 1px solid black; */
+	/* background: #000; */
+    overflow: hidden;
+    margin: 70px auto;
+}
+.hero{
+    width: 3000px;
+    animation-name:slider;
+	animation-duration:10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+}
+@keyframes slider {
+	0% { transform: translateX(0px); }
+	20% { transform: translateX(0px); }
+	25% { transform: translateX(-500px); }
+	45% { transform: translateX(-500px); }
+	50% { transform: translateX(-1000px); }
+	70% { transform: translateX(-1000px); }
+	75% { transform: translateX(-1500px); }
+	95% { transform: translateX(-1500px); }
+	100% { transform: translateX(2000px);  }
+}
+
+.hero img{
+    /* margin: 0 auto; */
+    /* margin-top: 50px; */
+    width: 497px;
     border-radius: 50%;
     transition: transform 1.5s ease-in-out;
 }
-img:hover {
+.hero img:hover {
     transform: rotate(720deg);
     cursor: pointer;
   }
-
-
 
 .moreinfo{
     margin-top: 50px;
