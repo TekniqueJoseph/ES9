@@ -6,8 +6,6 @@ function restParam(p1, p2, ...p3) {
   p3 = [3, 4, 5]
 }
 
-
-
 // const myObject = {
 //   a: 1,
 //   b: 2,
@@ -19,23 +17,23 @@ function restParam(p1, p2, ...p3) {
 // // x = { b: 2, c: 3 }
 
 // //finally
-// const urls = [
-//   'https://swapi.py4e.com/api/people/1',
-//   'https://swapi.py4e.com/api/people/2',
-//   'https://swapi.py4e.com/api/people/3',
-//   'https://swapi.py4e.com/api/people/4'
-// ]
+const urlz = [
+  'https://swapi.py4e.com/api/people/1',
+  'https://swapi.py4e.com/api/people/2',
+  'https://swapi.py4e.com/api/people/3',
+  'https://swapi.py4e.com/api/people/4'
+]
 
-// Promise.all(urls.map(url => fetch(url).then(people => people.json())))
-//   .then(array => {
-//     // throw Error
-//     console.log('1', array[0])
-//     console.log('2', array[1])
-//     console.log('3', array[2])
-//     console.log('4', array[3])
-//   })
-//   .catch(err => console.log('ughhhh fix it!', err))
-//   .finally(() => console.log('extra action here'))
+Promise.all(urlz.map(url => fetch(url).then(people => people.json())))
+  .then(array => {
+    // throw Error
+    console.log('1', array[0])
+    console.log('2', array[1])
+    console.log('3', array[2])
+    console.log('4', array[3])
+  })
+  .catch(err => console.log('ughhhh fix it!', err))
+  .finally(() => console.log('extra action here'))
 
 
 
