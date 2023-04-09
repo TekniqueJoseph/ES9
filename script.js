@@ -24,16 +24,16 @@ const urlz = [
   'https://swapi.py4e.com/api/people/4'
 ]
 
-Promise.all(urlz.map(url => fetch(url).then(people => people.json())))
-  .then(array => {
-    // throw Error
-    console.log('1', array[0])
-    console.log('2', array[1])
-    console.log('3', array[2])
-    console.log('4', array[3])
-  })
-  .catch(err => console.log('ughhhh fix it!', err))
-  .finally(() => console.log('extra action here'))
+// Promise.all(urlz.map(url => fetch(url).then(people => people.json())))
+//   .then(array => {
+//     // throw Error
+//     console.log('1', array[0])
+//     console.log('2', array[1])
+//     console.log('3', array[2])
+//     console.log('4', array[3])
+//   })
+//   .catch(err => console.log('ughhhh fix it!', err))
+//   .finally(() => console.log('extra action here'))
 
 
 
@@ -81,6 +81,6 @@ const getData2 = async function() {
 //   //In this case, for-await takes each item from the array and waits for it to resolve. You'll get the first response even if the second response isn't ready yet, but you'll always get the responses in the correct order.
 // 
 }
-// console.log(getData2())
+console.log(getData2())
 
 
