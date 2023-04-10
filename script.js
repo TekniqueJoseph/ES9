@@ -1,3 +1,11 @@
+const teas = ['green', 'black', 'red']
+
+const newTeas = teas.map(flav => flav)
+console.log(newTeas)
+
+const newTeas2 = teas.every(flav => flav.length < 6)
+console.log(newTeas2)
+
 //finally
 const urlz = [
   'https://swapi.py4e.com/api/people/1',
